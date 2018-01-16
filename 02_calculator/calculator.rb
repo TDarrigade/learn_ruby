@@ -13,3 +13,18 @@ def sum(arr)
     arr.each { |a| sum += a }
     sum
 end
+
+def multiply(*numbers)
+  result = 1
+  numbers.each { |n| result = result * n }
+  result
+end
+
+def power(x,y)
+	power = x ** y
+end
+
+def factorial(parameter)
+    result = (1..parameter).inject(1, :*)
+end
+
